@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Projects";
+}
+<main>
+    <table class="table table-bordered">
+        <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Course</th>
+        </tr>
+        @foreach(var project in ViewBag.projects) {
+            <tr>
+                <td>@project.Title</td>
+                <td>@project.Description</td>
+                <td>@project.Course</td>
+            </tr>
+        }
+    </table>
+
+</main>

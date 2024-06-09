@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Education";
+}
+<main aria-labelledby="title">
+    @foreach (var edu in ViewBag.education)
+    {
+       <ol>
+           <li>@edu.DegreeName</li>
+           <ul>
+
+               <li>@edu.Year</li>
+               <li>@edu.Group</li>
+               <li>@edu.Institution</li>
+           </ul>
+       </ol>
+       
+
+
+    }
+</main>
